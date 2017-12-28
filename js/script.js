@@ -1,11 +1,5 @@
-$(document).ready(function() {
-    getQuote();
-    $('.trigger').click(function() {
-        getQuote();
-    })
-});
-
 var tweetLink = "https://twitter.com/intent/tweet?text=";
+var prefix = "https://cors-anywhere.herokuapp.com/"; // prefiks pomagający w rozwiązaniu problemu z CORS
 var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 
 function getQuote() {
@@ -34,3 +28,9 @@ function createTweet(input) {
 	}
 
 }
+$(document).ready(function() {
+    getQuote();
+    $('.trigger').click(function() {
+        getQuote();
+    })
+});
