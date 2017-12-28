@@ -16,7 +16,8 @@ h1 {
 	border: 1px solid white;
 	background-color: transparent;
 	color: white;
-	padding: 15px;
+	padding: 10px;
+	width: 400px;
 }
 .trigger:hover, a.tweet:hover {
 	background-color: white;
@@ -24,10 +25,10 @@ h1 {
 }
 a.tweet {
 	border: 1px solid white;
-	padding: 15px;
-	width: 100px;
+	padding: 10px;
+	width: 400px;
 	text-align: center;
-	right: 200px;
+	/*right: 200px;*/
 }
 a {
 	color: white;
